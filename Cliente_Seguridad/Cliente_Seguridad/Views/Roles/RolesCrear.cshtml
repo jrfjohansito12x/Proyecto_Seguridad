@@ -1,0 +1,58 @@
+﻿@model Cliente_Seguridad.ServicioSeguridad.Rol
+@{
+    ViewBag.Title = "RolesCrear";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    @using (Html.BeginForm("RolesCrear", "Roles", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Nombre Rol (*)</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.NombreRol, new { @class = "form-control", @placeholder = "Nombre con el que se conoce al Rol" })
+                                @Html.ValidationMessageFor(model => model.NombreRol, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Descripción del Rol (*)</label>
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(model => model.DescripcionRol, htmlAttributes: new { @class = "form-control", @placeholder = "Descripción del objetivo y uso del Rol", @rows = "3", @maxlength = "2000" })
+                                @Html.ValidationMessageFor(model => model.DescripcionRol, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Estado del Rol (*)</label>
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(model => model.EstadoRol, new SelectList(ViewBag.ListaEstadoRol, "Value", "Text"), "- Seleccionar -", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.EstadoRol, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Tipo Permiso (*)</label>
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(model => model.TipoPermiso, new SelectList(ViewBag.TipoPermiso, "Value", "Text"), "- Seleccionar -", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.TipoPermiso, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group">
+                                    <button type="submit" class="btn btn-primary btn-sm "><i class="fa fa-save"></i>&nbsp;Grabar</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,26 @@
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.dll
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.pdb
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.csprojAssemblyReference.cache
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.csproj.CoreCompileInputs.cache
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.dll
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.pdb
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.dll
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.pdb
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.csprojAssemblyReference.cache
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.dll
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\SS_Modelo\bin\Debug\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\SS_Modelo\obj\Debug\SS_Modelo.pdb

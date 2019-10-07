@@ -1,0 +1,121 @@
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\JOHAN\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\herre\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v2\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\Alumno\Documents\GitHub\ProyectSystem\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\JCR\Desktop\PROYECTO FINAL SISTEMA DE SEGURIDAD v4\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Proyecto Seguridad v4\Proyecto Seguridad v4\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\JOHAN\Desktop\Proyecto Seguridad Pruebas Service\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll.config
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\Servicio_Seguridad.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Logica.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Modelo.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\bin\SS_Datos.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.csproj.CopyComplete
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Servicio_Seguridad\Servicio_Seguridad\obj\Debug\Servicio_Seguridad.pdb

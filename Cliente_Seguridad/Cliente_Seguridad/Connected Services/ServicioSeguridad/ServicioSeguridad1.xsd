@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SS_Modelo" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SS_Modelo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Grupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescripcionGrupo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="ModificadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreGrupo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPermiso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPermisoDesc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Grupo" nillable="true" type="tns:Grupo" />
+  <xs:complexType name="ArrayOfGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Grupo" nillable="true" type="tns:Grupo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupo" nillable="true" type="tns:ArrayOfGrupo" />
+  <xs:complexType name="GrupoRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoGrupoRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoGrupoRolDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdGrupoRol" type="xs:int" />
+      <xs:element minOccurs="0" name="IdRol" type="xs:int" />
+      <xs:element minOccurs="0" name="ModificadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreGrupo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreRol" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GrupoRol" nillable="true" type="tns:GrupoRol" />
+  <xs:complexType name="ArrayOfGrupoRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GrupoRol" nillable="true" type="tns:GrupoRol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupoRol" nillable="true" type="tns:ArrayOfGrupoRol" />
+  <xs:complexType name="GrupoUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApellidoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoGrupoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoGrupoUsuarioDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdGrupoUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="ModificadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreGrupo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GrupoUsuario" nillable="true" type="tns:GrupoUsuario" />
+  <xs:complexType name="ArrayOfGrupoUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GrupoUsuario" nillable="true" type="tns:GrupoUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupoUsuario" nillable="true" type="tns:ArrayOfGrupoUsuario" />
+  <xs:complexType name="Lista">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescripcionLista" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdLista" type="xs:int" />
+      <xs:element minOccurs="0" name="ModificadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreLista" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Lista" nillable="true" type="tns:Lista" />
+  <xs:complexType name="ArrayOfLista">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lista" nillable="true" type="tns:Lista" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLista" nillable="true" type="tns:ArrayOfLista" />
+  <xs:complexType name="ListaValor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdLista" type="xs:int" />
+      <xs:element minOccurs="0" name="IdListaValor" type="xs:int" />
+      <xs:element minOccurs="0" name="ModificadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreLista" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListaValor" nillable="true" type="tns:ListaValor" />
+  <xs:complexType name="ArrayOfListaValor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListaValor" nillable="true" type="tns:ListaValor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListaValor" nillable="true" type="tns:ArrayOfListaValor" />
+  <xs:complexType name="Rol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescripcionRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoRolDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdRol" type="xs:int" />
+      <xs:element minOccurs="0" name="ModificadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPermiso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPermisoDesc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rol" nillable="true" type="tns:Rol" />
+  <xs:complexType name="ArrayOfRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rol" nillable="true" type="tns:Rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRol" nillable="true" type="tns:ArrayOfRol" />
+  <xs:complexType name="Sesion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApellidoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoSesion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoSesionDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdAplicacion" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSesion" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UltimoPermiso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sesion" nillable="true" type="tns:Sesion" />
+  <xs:complexType name="ArrayOfSesion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Sesion" nillable="true" type="tns:Sesion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSesion" nillable="true" type="tns:ArrayOfSesion" />
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApellidoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaveAcceso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoUsuarioDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModificadoPor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="ArrayOfUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Usuario" nillable="true" type="tns:Usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuario" nillable="true" type="tns:ArrayOfUsuario" />
+</xs:schema>

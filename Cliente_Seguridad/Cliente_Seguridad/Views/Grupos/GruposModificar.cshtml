@@ -1,0 +1,96 @@
+﻿@model Cliente_Seguridad.ServicioSeguridad.Grupo
+@{
+    ViewBag.Title = "GruposModificar";
+}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Grupo</h5>
+                </div>
+                <div class="ibox-content">
+                    @using (Html.BeginForm("GruposModificar", "Grupos", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+                        @Html.HiddenFor(model => model.IdGrupo)
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Id del Grupo (*)</label>
+                            <div class="col-lg-8">
+                                @Html.TextBoxFor(model => model.IdGrupo, htmlAttributes: new { @class = "form-control", @readonly = "true" })
+                                @Html.ValidationMessageFor(model => model.IdGrupo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Nombre del Grupo (*)</label>
+                            <div class="col-lg-8">
+                                @Html.TextBoxFor(model => model.NombreGrupo, htmlAttributes: new { @class = "form-control", @placeholder = "Nombre con el que se conoce al Grupo" })
+                                @Html.ValidationMessageFor(model => model.NombreGrupo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Descripción del Grupo (*)</label>
+                            <div class="col-lg-8">
+                                @Html.TextAreaFor(model => model.DescripcionGrupo, htmlAttributes: new { @class = "form-control", @placeholder = "Descripción del objetivo y uso del Grupo", @rows = "3", @maxlength = "2000" })
+                                @Html.ValidationMessageFor(model => model.DescripcionGrupo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Creado el</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" disabled name="CreadoElX" value="@Model.FechaCreacion Por @Model.CreadoPor">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Modificado el</label>
+                            <div class="col-lg-8">
+                                @{var Modificado = "";
+                                    if (Model.FechaModificacion != null && Model.ModificadoPor != "")
+                                    {
+                                        Modificado = Model.FechaModificacion + " Por " + Model.ModificadoPor;
+                                    }
+                                }
+                                <input type="text" class="form-control" disabled name="ModificadoElX" value="@Modificado">
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                @if (ViewBag.PermisoModificacion == "TPMODI")
+                                {
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i>&nbsp;Actualizar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoEliminacion == "TPELIM")
+                                {
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger btn-sm" onclick="eliminaObjeto('@Url.Action("GrupoEliminarJson", "Grupos", new { idGrupo = Model.IdGrupo })');"><i class="fa fa-trash"></i>&nbsp;Eliminar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoCreacion == "TPCREA")
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("GruposCrear", "Grupos")" class="btn btn-default btn-sm" role="button"><i class="fa fa-file-o"></i>&nbsp;Nuevo</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Roles Asociados</h5>
+                </div>
+                <div class="ibox-content">
+                    <form class="form-horizontal">
+                        @Html.Action("Index", "GrupoRol", new { idGrupo = Model.IdGrupo })
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

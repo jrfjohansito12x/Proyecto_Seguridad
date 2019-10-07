@@ -1,0 +1,288 @@
+﻿@using System.Configuration;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SAFE | @ViewBag.Title</title>
+    @RenderSection("Styles", required: false)
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
+    @Styles.Render("~/plugins/toastrStyles")
+    @Styles.Render("~/plugins/dataPickerStyles")
+    @Styles.Render("~/plugins/dateRangeStyles")
+    @Styles.Render("~/Scripts/plugins/jquery-ui/jqueryuiStyles")
+    @Styles.Render("~/Content/plugins/iCheck/iCheckStyles")
+    @Styles.Render("~/plugins/c3Styles")
+    @Styles.Render("~/plugins/jasnyBootstrapStyles")
+    @Styles.Render("~/plugins/morrisStyles")
+    @Styles.Render("~/plugins/footableStyles")
+    @Styles.Render("~/plugins/awesomeCheckboxStyles")
+    @Styles.Render("~/plugins/select2Styles")
+    @Styles.Render("~/plugins/clockpickerStyles")
+    @Styles.Render("~/plugins/sweetAlertStyles")
+
+</head>
+<body>
+    @Html.Partial("_TemplateConfig")
+
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        @Html.Partial("_Navigation")
+
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg">
+
+            <!-- Top Navbar -->
+            @Html.Partial("_TopNavbar")
+
+            <!-- Main view  -->
+            @RenderBody()
+
+            <!-- Footer -->
+            @Html.Partial("_Footer")
+
+        </div>
+        <!-- End page wrapper-->
+
+    </div>
+    <!-- End wrapper-->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/plugins/metsiMenu")
+    @Scripts.Render("~/plugins/pace")
+    @Scripts.Render("~/plugins/slimScroll")
+    @Scripts.Render("~/bundles/inspinia?v=" + DateTime.Now.Ticks)
+    @Scripts.Render("~/script/script")
+    @Scripts.Render("~/plugins/iCheck")
+    @Scripts.Render("~/bundles/skinConfig")
+    @Scripts.Render("~/plugins/sweetAlert")
+    @Scripts.Render("~/plugins/toastr")
+    @Scripts.Render("~/plugins/dataPicker")
+    @Scripts.Render("~/plugins/dataTables")
+    @Scripts.Render("~/script/main")
+    @Scripts.Render("~/bundles/skinConfig")
+    @Scripts.Render("~/plugins/clockpicker")
+
+
+    @{
+        <script>
+            function mostrarMensajeToastr(titulo, mensaje, tipoMsg) {
+                debugger;
+                if (tipoMsg == null) return;
+                var varTimeOut = "1500";
+                if (tipoMsg == "error") varTimeOut = "0";
+                toastr.options = {
+                    "closeButton": true,
+                    "debug": true,
+                    "progressBar": true,
+                    "preventDuplicates": true,
+                    "positionClass": "toast-top-center",
+                    "showDuration": "400",
+                    "hideDuration": "1000",
+                    "timeOut": varTimeOut,
+                    "extendedTimeOut": "2000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut",
+                }
+
+                if (tipoMsg == "success") toastr.success(mensaje, titulo);
+                if (tipoMsg == "info") toastr.info(mensaje, titulo);
+                if (tipoMsg == "warning") toastr.warning(mensaje, titulo);
+                if (tipoMsg == "error") toastr.error(mensaje, titulo);
+            }
+
+            function eliminaObjeto(urlEjecucion) {
+                debugger;
+                swal({
+                    title: "Esta seguro?",
+                    text: "La Eliminación no puede deshacerse, ¿Esta Seguro?",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Eliminar",
+                    cancelButtonText: "Cancelar",
+                    closeOnConfirm: false
+                }, function () {
+                    $.ajax({
+                        url: urlEjecucion,
+                        dataType: "json",
+                        traditional: true,
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            if (data.success) {
+                                
+                                swal({
+                                    title: "Eliminado!",
+                                    text: "El registro ha sido eliminado.",
+                                    type: "success"
+                                }, function () {
+                                    window.location.href = data.redirectUrl;
+                                });
+
+                            } else {
+                                swal("Error!", data.message + " - " + data.redirectUrl, "error");
+                            }
+                        },
+                        error: function (xhr) {
+                            swal("Error!", "Error al eliminar el registro", "error");
+                        }
+                    });
+                });
+            };
+        </script>
+
+
+
+        @*if (Session["Mensaje"].ToString() != "" && Session["Mensaje"] != null)
+        {
+            bool mensajeBloqueante = false;
+            if (Session["Mensaje"].ToString().Contains("POT1") || Session["Mensaje"].ToString().Contains("[FMSG]1"))
+            {
+                mensajeBloqueante = true;
+            }
+            <div class="modal fade" id="modalMensaje" tabindex="-1" role="dialog" aria-labelledby="modalMensajeLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="modalMensajeLabel">Mensaje</h4>
+                        </div>
+                        <div class="modal-body">
+                         
+                            <p id="textoModalMensaje">@Html.Raw(Session["Mensaje"].ToString().Replace("[FMSG]0", "</p><hr /><p>").Replace("POT1", "</p><div class='alert alert-danger' role='alert'>La Aplicación se bloqueará</div><p>").Replace("[FMSG]1", "</p><hr /><div class='alert alert-danger' role='alert'>La Aplicación se bloqueará</div><p>").Replace("[FMSG]", "").Replace("POT0", ""))</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="cierraModal();">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $('#modalMensaje').modal('show')
+                });
+
+
+            </script>
+
+            Session["Mensaje"] = "";
+            if (mensajeBloqueante)
+            {
+                <script>
+                function cierraModal() {
+                    location.href = "@Url.Action("Index", "Salir")";
+                }
+                </script>
+            }
+            else
+            {
+                <script>
+                    function cierraModal() {
+
+                    }
+                </script>
+            }
+
+        }*@
+        if (ViewBag.NotificarGrabado != null)
+        {
+            if (ViewBag.NotificarGrabado.ToString() != "")
+            {
+                <script>
+            $(document).ready(function () {
+                debugger;
+                    mostrarMensajeToastr('Mensaje', '@ViewBag.NotificarGrabado.ToString().Replace("'", "´").Replace(Environment.NewLine, " ")', '@ViewBag.TipoNotificacion.ToString()');
+            });
+                </script>
+            }
+        }
+
+        @*<script>
+            $(document).ready(function () {
+
+                //Habilita las DataTables
+                cargaDataTable();
+            });
+
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+            });
+
+
+            function cargaDataTable() {
+                $('.dataTables-example').DataTable({
+                    pageLength: @ConfigurationManager.AppSettings.Get("RegistrosPorPagina"),
+                    dom: '<"html5buttons"B>lTfgitp',
+                    buttons: [
+                        { extend: 'copy' },
+                        { extend: 'csv' },
+                        { extend: 'excel', title: 'ExampleFile' },
+                        { extend: 'pdf', title: 'ExampleFile' },
+
+                        {
+                            extend: 'print',
+                            customize: function (win) {
+                                $(win.document.body).addClass('white-bg');
+                                $(win.document.body).css('font-size', '10px');
+
+                                $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                            }
+                        }
+                    ]
+
+                });
+            }
+        </script>*@
+
+        @*<script type="text/javascript">
+            $(document).ready(function () {
+                formatoTabla();
+            });
+            function formatoTabla() {
+                $('.dataTables-permisos').DataTable({
+                    paging: false,
+                    pageLength: 25,
+                    dom: '<"html5buttons"B>lTfgitp',
+                    buttons: [
+                        { extend: 'copy' },
+                        { extend: 'csv' },
+                        { extend: 'excel', title: 'Log Permisos' },
+                        { extend: 'pdf', title: 'Log Permisos' },
+                        {
+                            extend: 'print',
+                            customize: function (win) {
+                                $(win.document.body).addClass('white-bg');
+                                $(win.document.body).css('font-size', '10px');
+
+                                $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                            }
+                        }
+                    ]
+
+                });
+
+            }
+
+
+        </script>*@
+    }
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Cliente_Seguridad.ServicioSeguridad.ListaValor>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Valores asociados</h5>
+                </div>
+                <div class="ibox-content">
+                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Valor</th>
+                                <th>Descripcion</th>
+                                @if (ViewBag.PermisoEliminacion == "TPELIM")
+                                {
+                                    <th>Eliminar</th>
+                                }
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @{
+                                foreach (Cliente_Seguridad.ServicioSeguridad.ListaValor listaValor in Model)
+                                {
+                                    <tr>
+                                        <td>@listaValor.IdListaValor</td>
+                                        <td>
+                                            <a href="@Url.Action("ListaValorModificar", "ListaValor", new { idListaValor = listaValor.IdListaValor })">@listaValor.Valor</a>
+                                        </td>
+                                        <td>@listaValor.Descripcion</td>
+                                        @if (ViewBag.PermisoEliminacion == "TPELIM")
+                                        {
+                                            <td><a class="demo3" id="@listaValor.IdListaValor" href="#" onclick="eliminaObjeto('@Url.Action("ListaValorEliminarJson", "ListaValor", new { idListaValor = listaValor.IdListaValor })');"><span class="fa fa-trash"></span></a></td>
+                                        }
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm" onclick="ExportarListaValores();"><i class="fa fa-file-excel-o"></i>&nbsp;Exportar a Excel</button>
+                    </div>
+                    @if (ViewBag.PermisoCreacion == "TPCREA")
+                    {
+                        <div class="btn-group">
+                            <a href="@Url.Action("ListaValorRegistrar", "ListaValor", new { idLista = ViewBag.IdLista })" class="btn btn-default btn-sm" role="button"><i class="fa fa-file-o"></i>&nbsp;Nuevo</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

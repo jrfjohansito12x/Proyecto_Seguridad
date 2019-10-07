@@ -1,0 +1,100 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">
+                                    @Session["NombreUsuario"].ToString() @Session["ApellidoUsuario"].ToString()
+                                </strong>
+                            </span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        @*<li><a href="@Url.Action("UsuarioEditar", "Usuarios" , new { usuarioTmp=Url.Encode(Session["Usuario"].ToString()) })">Perfil</a></li>*@
+                        <li><a href="">Perfil</a></li>
+                        <li class="divider"></li>
+                        <li><a href="@Url.Action("Index", "Salir")">Salir</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element" style="font-size:8pt;">
+                    Sistema Seguridad
+                </div>
+            </li>
+
+            <li class="">
+                <a href="@Url.Action("Index", "Home")"><i class="fa fa-th-large"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.dashboard">Inicio</span></a>
+            </li>
+            @*@if (Session["mAplicaciones"].ToString().Substring(0, 3) == "POT")
+                {*@
+            @*<li class="">
+                    <a href="@Url.Action("Index", "Aplicaciones")"><i class="fa fa-desktop"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.dashboard">Aplicaciones</span> </a>
+                </li>*@
+            @*}*@
+
+            @if (Session["PermisoVisibilidad"] != null)
+            {
+                if (Session["PermisoVisibilidad"].ToString() == "TPVISI")
+                {
+                    <li class="">
+                        <a href="@Url.Action("Index", "Roles")"><i class="fa fa-id-badge"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.dashboard">Roles</span></a>
+                    </li>
+                    @* @if (Session["mGrupos"].ToString().Substring(0, 3) == "POT")
+                        {*@
+                    <li class="">
+                        <a href="@Url.Action("Index", "Grupos")"><i class="fa fa-users"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.dashboard">Grupos</span></a>
+                    </li>
+                    @*}
+                        @if (Session["mUsuarios"].ToString().Substring(0, 3) == "POT")
+                        {*@
+                    <li class="">
+                        <a href="@Url.Action("Index", "Usuario")"><i class="fa fa-user"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.dashboard">Usuarios</span></a>
+                    </li>
+                    @*}
+                        @if (Session["mMensajes"].ToString().Substring(0, 3) == "POT")
+                        {*@
+                    @*<li class="">
+                            <a href="@Url.Action("Index", "Mensajes")"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.layouts">Mensajes</span> </a>
+                        </li>*@
+                    @*}
+
+                        @if (Session["mMensajes"].ToString().Substring(0, 3) == "POT")
+                        {*@
+
+                    @*<li class="">
+                            <a href="@Url.Action("Index","TarjetaCoordenada")"><i class="far fa-credit-card"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.layouts">Tarjeta Coordenadas</span> </a>
+                        </li>*@
+
+                    <li class="">
+                        @*<a href="@Url.Action("Index", "Sesion")"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.layouts">Sesiones</span> </a>*@
+                    </li>
+
+                    @*}
+
+                        @if (Session["mConfiguracion"].ToString().Substring(0, 3) == "POT")
+                        {*@
+                    <li class=" ">
+
+                        <a href="#"><i class="fa fa-cogs"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.graphs">Configuracion</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class=""><a href="@Url.Action("Index", "Lista")">Listas de Valores</a></li>
+                        </ul>
+                    </li>
+
+                }
+            }
+            @*}
+                @if (Session["mReportes"].ToString().Substring(0, 3) == "POT")
+                {*@
+            @*<li class="">
+                    <a href="#"><i class="fa fa-chart-bar"></i>&nbsp;&nbsp;<span class="nav-label" data-i18n="nav.mailbox">Reportes </span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li class=""><a href="@Url.Action("Index", "LogPermiso")">Log del Sistema</a></li>
+                    </ul>
+                </li>*@
+            @*}*@
+        </ul>
+    </div>
+</nav>

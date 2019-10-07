@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioSeguridad" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51236/ServicioSeguridad.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51236/ServicioSeguridad.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51236/ServicioSeguridad.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SS_Modelo" />
+      <xsd:import schemaLocation="http://localhost:51236/ServicioSeguridad.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioSeguridad_Grupo_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_Modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_Modificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_Modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_ModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Grupo_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Grupo_EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRolUsuario_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRolUsuario_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRolUsuario_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRolUsuario_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_Modificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_ModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoRol_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoRol_EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_Modificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_ModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_GrupoUsuario_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrupoUsuario_EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Modificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_ModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Lista_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_Modificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_ModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_ListaValor_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaValor_EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_Modificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_ModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Rol_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Rol_EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_Activar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_Activar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Sesion_Activar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sesion_ActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Modificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_ModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Leer" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_LeerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_LeerTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_LeerTodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_LeerTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_LeerTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_LeerTodo2_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_LeerTodo2" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_LeerTodo2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_LeerTodo2Response" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Iniciar_Sesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Iniciar_Sesion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Iniciar_Sesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Iniciar_SesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Registrar_Grupo_MinpaoHome_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Registrar_Grupo_MinpaoHome" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Registrar_Grupo_MinpaoHome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Registrar_Grupo_MinpaoHomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Registrar_Grupo_2_InputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Registrar_Grupo_2" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSeguridad_Usuario_Registrar_Grupo_2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Usuario_Registrar_Grupo_2Response" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioSeguridad">
+    <wsdl:operation name="Grupo_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_Registrar" message="tns:IServicioSeguridad_Grupo_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_RegistrarResponse" message="tns:IServicioSeguridad_Grupo_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_Modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_Modificar" message="tns:IServicioSeguridad_Grupo_Modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_ModificarResponse" message="tns:IServicioSeguridad_Grupo_Modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_Leer" message="tns:IServicioSeguridad_Grupo_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_LeerResponse" message="tns:IServicioSeguridad_Grupo_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_LeerTodo" message="tns:IServicioSeguridad_Grupo_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_LeerTodoResponse" message="tns:IServicioSeguridad_Grupo_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_Eliminar" message="tns:IServicioSeguridad_Grupo_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Grupo_EliminarResponse" message="tns:IServicioSeguridad_Grupo_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRolUsuario_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRolUsuario_Leer" message="tns:IServicioSeguridad_GrupoRolUsuario_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRolUsuario_LeerResponse" message="tns:IServicioSeguridad_GrupoRolUsuario_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_Registrar" message="tns:IServicioSeguridad_GrupoRol_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_RegistrarResponse" message="tns:IServicioSeguridad_GrupoRol_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_Modificar" message="tns:IServicioSeguridad_GrupoRol_Modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_ModificarResponse" message="tns:IServicioSeguridad_GrupoRol_Modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_Leer" message="tns:IServicioSeguridad_GrupoRol_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_LeerResponse" message="tns:IServicioSeguridad_GrupoRol_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_LeerTodo" message="tns:IServicioSeguridad_GrupoRol_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_LeerTodoResponse" message="tns:IServicioSeguridad_GrupoRol_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_Eliminar" message="tns:IServicioSeguridad_GrupoRol_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoRol_EliminarResponse" message="tns:IServicioSeguridad_GrupoRol_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Registrar" message="tns:IServicioSeguridad_GrupoUsuario_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_RegistrarResponse" message="tns:IServicioSeguridad_GrupoUsuario_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Modificar" message="tns:IServicioSeguridad_GrupoUsuario_Modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_ModificarResponse" message="tns:IServicioSeguridad_GrupoUsuario_Modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Leer" message="tns:IServicioSeguridad_GrupoUsuario_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_LeerResponse" message="tns:IServicioSeguridad_GrupoUsuario_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_LeerTodo" message="tns:IServicioSeguridad_GrupoUsuario_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_LeerTodoResponse" message="tns:IServicioSeguridad_GrupoUsuario_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Eliminar" message="tns:IServicioSeguridad_GrupoUsuario_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/GrupoUsuario_EliminarResponse" message="tns:IServicioSeguridad_GrupoUsuario_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_Registrar" message="tns:IServicioSeguridad_Lista_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_RegistrarResponse" message="tns:IServicioSeguridad_Lista_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_Modificar" message="tns:IServicioSeguridad_Lista_Modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_ModificarResponse" message="tns:IServicioSeguridad_Lista_Modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_Leer" message="tns:IServicioSeguridad_Lista_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_LeerResponse" message="tns:IServicioSeguridad_Lista_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_LeerTodo" message="tns:IServicioSeguridad_Lista_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_LeerTodoResponse" message="tns:IServicioSeguridad_Lista_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_Eliminar" message="tns:IServicioSeguridad_Lista_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Lista_EliminarResponse" message="tns:IServicioSeguridad_Lista_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_Registrar" message="tns:IServicioSeguridad_ListaValor_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_RegistrarResponse" message="tns:IServicioSeguridad_ListaValor_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_Modificar" message="tns:IServicioSeguridad_ListaValor_Modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_ModificarResponse" message="tns:IServicioSeguridad_ListaValor_Modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_Leer" message="tns:IServicioSeguridad_ListaValor_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_LeerResponse" message="tns:IServicioSeguridad_ListaValor_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_LeerTodo" message="tns:IServicioSeguridad_ListaValor_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_LeerTodoResponse" message="tns:IServicioSeguridad_ListaValor_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_Eliminar" message="tns:IServicioSeguridad_ListaValor_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/ListaValor_EliminarResponse" message="tns:IServicioSeguridad_ListaValor_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_Registrar" message="tns:IServicioSeguridad_Rol_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_RegistrarResponse" message="tns:IServicioSeguridad_Rol_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_Modificar" message="tns:IServicioSeguridad_Rol_Modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_ModificarResponse" message="tns:IServicioSeguridad_Rol_Modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_Leer" message="tns:IServicioSeguridad_Rol_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_LeerResponse" message="tns:IServicioSeguridad_Rol_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rol_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_LeerTodo" message="tns:IServicioSeguridad_Rol_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_LeerTodoResponse" message="tns:IServicioSeguridad_Rol_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_Eliminar" message="tns:IServicioSeguridad_Rol_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Rol_EliminarResponse" message="tns:IServicioSeguridad_Rol_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_Registrar" message="tns:IServicioSeguridad_Sesion_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_RegistrarResponse" message="tns:IServicioSeguridad_Sesion_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_Leer" message="tns:IServicioSeguridad_Sesion_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_LeerResponse" message="tns:IServicioSeguridad_Sesion_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_LeerTodo" message="tns:IServicioSeguridad_Sesion_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_LeerTodoResponse" message="tns:IServicioSeguridad_Sesion_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_Activar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_Activar" message="tns:IServicioSeguridad_Sesion_Activar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Sesion_ActivarResponse" message="tns:IServicioSeguridad_Sesion_Activar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Registrar" message="tns:IServicioSeguridad_Usuario_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_RegistrarResponse" message="tns:IServicioSeguridad_Usuario_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Modificar" message="tns:IServicioSeguridad_Usuario_Modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_ModificarResponse" message="tns:IServicioSeguridad_Usuario_Modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Leer" message="tns:IServicioSeguridad_Usuario_Leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_LeerResponse" message="tns:IServicioSeguridad_Usuario_Leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_LeerTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_LeerTodo" message="tns:IServicioSeguridad_Usuario_LeerTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_LeerTodoResponse" message="tns:IServicioSeguridad_Usuario_LeerTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_LeerTodo2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_LeerTodo2" message="tns:IServicioSeguridad_Usuario_LeerTodo2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_LeerTodo2Response" message="tns:IServicioSeguridad_Usuario_LeerTodo2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Iniciar_Sesion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Iniciar_Sesion" message="tns:IServicioSeguridad_Usuario_Iniciar_Sesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Iniciar_SesionResponse" message="tns:IServicioSeguridad_Usuario_Iniciar_Sesion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Eliminar" message="tns:IServicioSeguridad_Usuario_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_EliminarResponse" message="tns:IServicioSeguridad_Usuario_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Registrar_Grupo_MinpaoHome">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Registrar_Grupo_MinpaoHome" message="tns:IServicioSeguridad_Usuario_Registrar_Grupo_MinpaoHome_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Registrar_Grupo_MinpaoHomeResponse" message="tns:IServicioSeguridad_Usuario_Registrar_Grupo_MinpaoHome_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Registrar_Grupo_2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Registrar_Grupo_2" message="tns:IServicioSeguridad_Usuario_Registrar_Grupo_2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSeguridad/Usuario_Registrar_Grupo_2Response" message="tns:IServicioSeguridad_Usuario_Registrar_Grupo_2_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioSeguridad" type="tns:IServicioSeguridad">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Grupo_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Grupo_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_Modificar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Grupo_Modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Grupo_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Grupo_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Grupo_Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Grupo_Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRolUsuario_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoRolUsuario_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoRol_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Modificar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoRol_Modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoRol_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoRol_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoRol_Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoRol_Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Modificar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoUsuario_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrupoUsuario_Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/GrupoUsuario_Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Lista_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Modificar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Lista_Modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Lista_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Lista_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Lista_Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/ListaValor_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Modificar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/ListaValor_Modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/ListaValor_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/ListaValor_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaValor_Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/ListaValor_Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Rol_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Modificar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Rol_Modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Rol_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rol_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Rol_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rol_Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Rol_Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Sesion_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Sesion_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Sesion_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sesion_Activar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Sesion_Activar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Registrar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Modificar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_Modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Leer">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_Leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_LeerTodo">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_LeerTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_LeerTodo2">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_LeerTodo2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Iniciar_Sesion">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_Iniciar_Sesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Registrar_Grupo_MinpaoHome">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_Registrar_Grupo_MinpaoHome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Registrar_Grupo_2">
+      <soap:operation soapAction="http://tempuri.org/IServicioSeguridad/Usuario_Registrar_Grupo_2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioSeguridad">
+    <wsdl:port name="BasicHttpBinding_IServicioSeguridad" binding="tns:BasicHttpBinding_IServicioSeguridad">
+      <soap:address location="http://localhost:51236/ServicioSeguridad.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1629 @@
+Create Database [DBSeguridad.V.3]
+GO
+USE [DBSeguridad.V.3]
+GO
+/****** Object:  Table [dbo].[Grupo]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Grupo](
+	[IdGrupo] [int] IDENTITY(1,1) NOT NULL,
+	[NombreGrupo] [varchar](200) NOT NULL,
+	[DescripcionGrupo] [varchar](200) NULL,
+	[CreadoPor] [varchar](200) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[ModificadoPor] [varchar](200) NULL,
+	[FechaModificacion] [datetime] NULL,
+ CONSTRAINT [Pk_Grupo] PRIMARY KEY CLUSTERED 
+(
+	[IdGrupo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[GrupoRol]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[GrupoRol](
+	[IdGrupoRol] [int] IDENTITY(1,1) NOT NULL,
+	[IdGrupo] [int] NOT NULL,
+	[IdRol] [int] NOT NULL,
+	[EstadoGrupoRol] [varchar](6) NOT NULL,
+	[CreadoPor] [varchar](200) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[ModificadoPor] [varchar](200) NULL,
+	[FechaModificacion] [datetime] NULL,
+ CONSTRAINT [PK_GrupoRol] PRIMARY KEY CLUSTERED 
+(
+	[IdGrupoRol] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[GrupoUsuario]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[GrupoUsuario](
+	[IdGrupoUsuario] [int] IDENTITY(1,1) NOT NULL,
+	[IdGrupo] [int] NOT NULL,
+	[Usuario] [varchar](200) NOT NULL,
+	[EstadoGrupoUsuario] [varchar](6) NOT NULL,
+	[CreadoPor] [varchar](200) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[ModificadoPor] [varchar](200) NULL,
+	[FechaModificacion] [datetime] NULL,
+ CONSTRAINT [PK_GrupoUsuario] PRIMARY KEY CLUSTERED 
+(
+	[IdGrupoUsuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Lista]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Lista](
+	[IdLista] [int] IDENTITY(1,1) NOT NULL,
+	[NombreLista] [varchar](200) NOT NULL,
+	[DescripcionLista] [varchar](200) NOT NULL,
+	[CreadoPor] [varchar](100) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[ModificadoPor] [varchar](100) NULL,
+	[FechaModificacion] [datetime] NULL,
+ CONSTRAINT [PK_Lista] PRIMARY KEY CLUSTERED 
+(
+	[IdLista] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[ListaValor]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[ListaValor](
+	[IdListaValor] [int] IDENTITY(1,1) NOT NULL,
+	[IdLista] [int] NOT NULL,
+	[Valor] [varchar](6) NOT NULL,
+	[Descripcion] [varchar](200) NULL,
+	[CreadoPor] [varchar](100) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[ModificadoPor] [varchar](100) NULL,
+	[FechaModificacion] [datetime] NULL,
+ CONSTRAINT [PK_ListaValor] PRIMARY KEY CLUSTERED 
+(
+	[IdListaValor] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Rol]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Rol](
+	[IdRol] [int] IDENTITY(1,1) NOT NULL,
+	[NombreRol] [varchar](200) NOT NULL,
+	[DescripcionRol] [varchar](200) NULL,
+	[EstadoRol] [varchar](200) NOT NULL,
+	[TipoPermiso] [varchar](6) NOT NULL,
+	[CreadoPor] [varchar](200) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[ModificadoPor] [varchar](200) NULL,
+	[FechaModificacion] [datetime] NULL,
+ CONSTRAINT [PK_Rol] PRIMARY KEY CLUSTERED 
+(
+	[IdRol] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Sesion]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Sesion](
+	[IdSesion] [int] IDENTITY(1,1) NOT NULL,
+	[IdAplicacion] [int] NOT NULL,
+	[Usuario] [varchar](200) NOT NULL,
+	[UltimoPermiso] [datetime] NOT NULL,
+	[Token] [varchar](10) NOT NULL,
+	[EstadoSesion] [varchar](6) NOT NULL,
+ CONSTRAINT [PK_Sesion] PRIMARY KEY CLUSTERED 
+(
+	[IdSesion] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Usuario]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Usuario](
+	[IDUsuario] [varchar](200) NOT NULL,
+	[NombreUsuario] [varchar](200) NOT NULL,
+	[ApellidoUsuario] [varchar](200) NOT NULL,
+	[ClaveAcceso] [varchar](200) NOT NULL,
+	[Email] [varchar](200) NOT NULL,
+	[EstadoUsuario] [varchar](6) NOT NULL,
+	[CreadoPor] [varchar](200) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[ModificadoPor] [varchar](200) NULL,
+	[FechaModificacion] [datetime] NULL,
+ CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[IDUsuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+SET IDENTITY_INSERT [dbo].[Grupo] ON 
+
+INSERT [dbo].[Grupo] ([IdGrupo], [NombreGrupo], [DescripcionGrupo], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (1, N'Grupo Administrador', N'Grupo al que pertenecen solo los  administradores del sistema ', N'Administrador', 2019-09-28, NULL, NULL)
+INSERT [dbo].[Grupo] ([IdGrupo], [NombreGrupo], [DescripcionGrupo], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (2, N'Grupo Clientes', N'Grupo al que pertenecen los clientes ', N'Administrador', 2019-09-28 , NULL, NULL)
+SET IDENTITY_INSERT [dbo].[Grupo] OFF
+SET IDENTITY_INSERT [dbo].[GrupoRol] ON 
+
+INSERT [dbo].[GrupoRol] ([IdGrupoRol], [IdGrupo], [IdRol], [EstadoGrupoRol], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (1, 1, 1, N'ESGRAC', N'Administrador', 2019-09-28 , NULL, NULL)
+INSERT [dbo].[GrupoRol] ([IdGrupoRol], [IdGrupo], [IdRol], [EstadoGrupoRol], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (2, 1, 2, N'ESGRAC', N'Administrador', 2019-09-28 , NULL, NULL)
+INSERT [dbo].[GrupoRol] ([IdGrupoRol], [IdGrupo], [IdRol], [EstadoGrupoRol], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (3, 1, 3, N'ESGRAC', N'Administrador',2019-09-28 , NULL, NULL)
+INSERT [dbo].[GrupoRol] ([IdGrupoRol], [IdGrupo], [IdRol], [EstadoGrupoRol], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (4, 1, 4, N'ESGRAC', N'Administrador', 2019-09-28 , NULL, NULL)
+INSERT [dbo].[GrupoRol] ([IdGrupoRol], [IdGrupo], [IdRol], [EstadoGrupoRol], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (5, 1, 5, N'ESGRAC', N'Administrador', 2019-09-28 , NULL, NULL)
+INSERT [dbo].[GrupoRol] ([IdGrupoRol], [IdGrupo], [IdRol], [EstadoGrupoRol], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (6, 2, 3, N'ESGRAC', N'Administrador', 2019-09-28 , NULL, NULL)
+SET IDENTITY_INSERT [dbo].[GrupoRol] OFF
+SET IDENTITY_INSERT [dbo].[GrupoUsuario] ON 
+
+INSERT [dbo].[GrupoUsuario] ([IdGrupoUsuario], [IdGrupo], [Usuario], [EstadoGrupoUsuario], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (1, 1, N'Administrador', N'ESGUAC', N'Administrador',2019-09-28, NULL, NULL)
+INSERT [dbo].[GrupoUsuario] ([IdGrupoUsuario], [IdGrupo], [Usuario], [EstadoGrupoUsuario], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (2, 2, N'Daniel', N'ESGUAC', N'Administrador', 2019-09-28 , NULL, NULL)
+SET IDENTITY_INSERT [dbo].[GrupoUsuario] OFF
+SET IDENTITY_INSERT [dbo].[Lista] ON 
+
+INSERT [dbo].[Lista] ([IdLista], [NombreLista], [DescripcionLista], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (1, N'Estado Roles', N'Son Los Estados De Los Roles', N'Administrador', 1905-06-07 , N'Administrador', 1905-06-07 )
+INSERT [dbo].[Lista] ([IdLista], [NombreLista], [DescripcionLista], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (2, N'Tipos De Permiso Rol', N'Indica Los Tipos De Pemiso De De Un rol', N'Administrador', 1905-06-07, NULL, NULL)
+INSERT [dbo].[Lista] ([IdLista], [NombreLista], [DescripcionLista], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (3, N'Estado Grupo Usuario', N'Estado del Grupo Usuario', N'Administrador',1905-06-07 , NULL, NULL)
+INSERT [dbo].[Lista] ([IdLista], [NombreLista], [DescripcionLista], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (4, N'Estado del Usuario', N'Estado del Usuario', N'Administrador', 1905-06-07 , NULL, NULL)
+INSERT [dbo].[Lista] ([IdLista], [NombreLista], [DescripcionLista], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (5, N'Estado del Grupo Rol', N'Estado del Grupo Rol', N'Administrador', 1905-06-07 , NULL, NULL)
+SET IDENTITY_INSERT [dbo].[Lista] OFF
+SET IDENTITY_INSERT [dbo].[ListaValor] ON 
+
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (1, 1, N'ROLACT', N'Activo', N'Administrador', 1905-06-07 , N'Administrador', 1905-06-07 )
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (2, 1, N'ROLDES', N'No Activo', N'Administrador',1905-06-07, N'Administrador',1905-06-07 )
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (3, 2, N'TPEJEC', N'Ejecución', N'Administrador', 1905-06-07 , NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (4, 2, N'TPELIM', N'Eliminación', N'Administrador', 1905-06-07, NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (5, 2, N'TPVISI', N'Visibilidad', N'Administrador',1905-06-07 , NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (6, 2, N'TPMODI', N'Modificación', N'Administrador', 1905-06-07 , NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (7, 2, N'TPCREA', N'Creación', N'Administrador', 1905-06-07 , NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (11, 3, N'ESGUAC', N'Activo', N'Administrador', 1905-06-07 , NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (12, 4, N'ESUSAC', N'Activo', N'Administrador', 1905-06-07 , NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (13, 4, N'ESUSNA', N'No Activo', N'Administrador', 1905-06-07 , NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (14, 5, N'ESGRAC', N'Activo', N'Administrador',1905-06-07, NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (15, 5, N'ESGRNA', N'No Activo', N'Administrador', 1905-06-07, NULL, NULL)
+INSERT [dbo].[ListaValor] ([IdListaValor], [IdLista], [Valor], [Descripcion], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (16, 3, N'ESGUNA', N'No Activo', N'Administrador',1905-06-07 , N'Administrador',1905-06-06 )
+SET IDENTITY_INSERT [dbo].[ListaValor] OFF
+SET IDENTITY_INSERT [dbo].[Rol] ON 
+
+INSERT [dbo].[Rol] ([IdRol], [NombreRol], [DescripcionRol], [EstadoRol], [TipoPermiso], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (1, N'Rol Ejecución', N'Rol que permite al usuario ejecutar procesos en el sistema ', N'ROLACT', N'TPEJEC', N'Administrador', 2019-09-28, NULL, NULL)
+INSERT [dbo].[Rol] ([IdRol], [NombreRol], [DescripcionRol], [EstadoRol], [TipoPermiso], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (2, N'Rol Eliminación ', N'Rol que permite al usuario eliminar ', N'ROLACT', N'TPELIM', N'Administrador', 2019-09-28, NULL, NULL)
+INSERT [dbo].[Rol] ([IdRol], [NombreRol], [DescripcionRol], [EstadoRol], [TipoPermiso], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (3, N'Rol Visibilidad', N'Rol que permite al usuario visibilidad en el sistema', N'ROLACT', N'TPVISI', N'Administrador', 2019-09-28, NULL, NULL)
+INSERT [dbo].[Rol] ([IdRol], [NombreRol], [DescripcionRol], [EstadoRol], [TipoPermiso], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (4, N'Rol Modificacion', N'Rol que permite al usuario modificar ', N'ROLACT', N'TPMODI', N'Administrador', 2019-09-28, NULL, NULL)
+INSERT [dbo].[Rol] ([IdRol], [NombreRol], [DescripcionRol], [EstadoRol], [TipoPermiso], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (5, N'Rol Creacion', N'Rol que permite al usuario crear', N'ROLACT', N'TPCREA', N'Administrador',2019-09-28 , NULL, NULL)
+SET IDENTITY_INSERT [dbo].[Rol] OFF
+INSERT [dbo].[Usuario] ([IDUsuario], [NombreUsuario], [ApellidoUsuario], [ClaveAcceso], [Email], [EstadoUsuario], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (N'Administrador', N'Sistema', N'Administrador', N'123456789', N'administrador@gmail.com', N'ESUSAC', N'Daniel', 2019-09-28 , N'Administrador', 2019-09-28 )
+INSERT [dbo].[Usuario] ([IDUsuario], [NombreUsuario], [ApellidoUsuario], [ClaveAcceso], [Email], [EstadoUsuario], [CreadoPor], [FechaCreacion], [ModificadoPor], [FechaModificacion]) VALUES (N'Daniel', N'Daniel Joel', N'Castro Rodríguez', N'Daniel', N'daniel.castro@gmail.com', N'ESUSAC', N'Administrador', 1905-06-06 , N'Administrador', 1905-06-06  )
+ALTER TABLE [dbo].[GrupoRol]  WITH CHECK ADD  CONSTRAINT [FK__GrupoRol__IdGrupo] FOREIGN KEY([IdGrupo])
+REFERENCES [dbo].[Grupo] ([IdGrupo])
+GO
+ALTER TABLE [dbo].[GrupoRol] CHECK CONSTRAINT [FK__GrupoRol__IdGrupo]
+GO
+ALTER TABLE [dbo].[GrupoRol]  WITH CHECK ADD FOREIGN KEY([IdRol])
+REFERENCES [dbo].[Rol] ([IdRol])
+GO
+ALTER TABLE [dbo].[GrupoUsuario]  WITH CHECK ADD FOREIGN KEY([Usuario])
+REFERENCES [dbo].[Usuario] ([IDUsuario])
+GO
+ALTER TABLE [dbo].[GrupoUsuario]  WITH CHECK ADD  CONSTRAINT [FK__GrupoUsuario_IdGrupo] FOREIGN KEY([IdGrupo])
+REFERENCES [dbo].[Grupo] ([IdGrupo])
+GO
+ALTER TABLE [dbo].[GrupoUsuario] CHECK CONSTRAINT [FK__GrupoUsuario_IdGrupo]
+GO
+ALTER TABLE [dbo].[ListaValor]  WITH CHECK ADD FOREIGN KEY([IdLista])
+REFERENCES [dbo].[Lista] ([IdLista])
+GO
+ALTER TABLE [dbo].[Sesion]  WITH CHECK ADD FOREIGN KEY([Usuario])
+REFERENCES [dbo].[Usuario] ([IDUsuario])
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoEliminar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Eliminar
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoEliminar] (@IdGrupo INT)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	DELETE Grupo
+	WHERE IdGrupo = @IdGrupo
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoLeer] (
+	@IdGrupo INT
+	,@NombreGrupo VARCHAR(200)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT IdGrupo
+		,NombreGrupo
+		,DescripcionGrupo
+		,CreadoPor
+		,FechaCreacion
+		,ModificadoPor
+		,FechaModificacion
+	FROM Grupo
+	WHERE (
+			IdGrupo = @IdGrupo
+			OR @IdGrupo = 0
+			)
+		AND (
+			NombreGrupo = @NombreGrupo
+			OR @NombreGrupo = ''
+			)
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoModificar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Modificar
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoModificar] (
+	@IdGrupo INT
+	,@NombreGrupo VARCHAR(200)
+	,@DescripcionGrupo VARCHAR(200)
+	,@ModificadoPor VARCHAR(200)
+	,@FechaModificacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE Grupo
+	SET NombreGrupo = @NombreGrupo
+		,DescripcionGrupo = @DescripcionGrupo
+		,ModificadoPor = @ModificadoPor
+		,FechaModificacion = @FechaModificacion
+	WHERE IdGrupo = @IdGrupo
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Registrar
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoRegistrar] (
+	@NombreGrupo VARCHAR(200)
+	,@DescripcionGrupo VARCHAR(200)
+	,@CreadoPor VARCHAR(200)
+	,@FechaCreacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO Grupo (
+		NombreGrupo
+		,DescripcionGrupo
+		,CreadoPor
+		,FechaCreacion
+		)
+	VALUES (
+		@NombreGrupo
+		,@DescripcionGrupo
+		,@CreadoPor
+		,@FechaCreacion
+		)
+
+	SELECT @@IDENTITY AS 'IdGrupo';
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoRolEliminar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Rol Eliminar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoRolEliminar] (@IdGrupoRol INT)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	DELETE GrupoRol
+	WHERE IdGrupoRol = @IdGrupoRol
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoRolLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Rol Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoRolLeer] (
+	@IdGrupoRol INT
+	,@IdGrupo INT
+	,@IdRol INT
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT GR.IdGrupoRol
+		,G.IdGrupo
+		,G.NombreGrupo
+		,R.IdRol
+		,R.NombreRol
+		,LV.Valor AS EstadoGrupoRol
+		,LV.Descripcion AS EstadoGrupoRolDesc
+		,GR.CreadoPor
+		,GR.FechaCreacion
+		,GR.ModificadoPor
+		,GR.FechaModificacion
+	FROM GrupoRol GR
+	INNER JOIN Grupo G ON GR.IdGrupo = G.IdGrupo
+	INNER JOIN Rol R ON GR.IdRol = R.IdRol
+	INNER JOIN ListaValor LV ON GR.EstadoGrupoRol = LV.Valor
+	WHERE (
+			GR.IdGrupoRol = @IdGrupoRol
+			OR @IdGrupoRol = 0
+			)
+		AND (
+			G.IdGrupo = @IdGrupo
+			OR @IdGrupo = 0
+			)
+		AND (
+			R.IdRol = @IdRol
+			OR @IdRol = 0
+			)
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoRolModificar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Rol Modificar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoRolModificar] (
+	@IdGrupoRol INT
+	,@IdGrupo INT
+	,@IdRol INT
+	,@EstadoGrupoRol CHAR(6)
+	,@ModificadoPor VARCHAR(200)
+	,@FechaModificacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE GrupoRol
+	SET IdGrupo = @IdGrupo
+		,IdRol = @IdRol
+		,EstadoGrupoRol = @EstadoGrupoRol
+		,ModificadoPor = @ModificadoPor
+		,FechaModificacion = @FechaModificacion
+	WHERE IdGrupoRol = @IdGrupoRol
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoRolRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Rol Registrar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoRolRegistrar] (
+	@IdGrupo INT
+	,@IdRol INT
+	,@EstadoGrupoRol CHAR(6)
+	,@CreadoPor VARCHAR(200)
+	,@FechaCreacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO GrupoRol (
+		IdGrupo
+		,IdRol
+		,EstadoGrupoRol
+		,CreadoPor
+		,FechaCreacion
+		)
+	VALUES (
+		@IdGrupo
+		,@IdRol
+		,@EstadoGrupoRol
+		,@CreadoPor
+		,@FechaCreacion
+		)
+	SELECT @@IDENTITY AS 'IdGrupoRol';
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoRolUsuarioLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoRolUsuarioLeer] (
+	@IdGrupo INT
+	,@NombreGrupo VARCHAR(200)
+	,@Usuario VARCHAR(200)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT G.IdGrupo
+		,G.NombreGrupo
+		,G.DescripcionGrupo
+		,R.NombreRol
+		,R.EstadoRol
+		,LV.Valor AS TipoPermiso
+		,LV.Descripcion AS TipoPermisoDesc
+		,G.CreadoPor
+		,G.FechaCreacion
+		,G.ModificadoPor
+		,G.FechaModificacion
+	FROM Grupo G
+	INNER JOIN GrupoRol GR ON G.IdGrupo = GR.IdGrupo
+	INNER JOIN Rol R ON GR.IdRol = R.IdRol
+	INNER JOIN ListaValor LV ON R.TipoPermiso = LV.Valor
+	INNER JOIN GrupoUsuario GU ON G.IdGrupo = GU.IdGrupo
+	WHERE (
+			G.IdGrupo = @IdGrupo
+			OR @IdGrupo = 0
+			)
+		AND (
+			G.NombreGrupo = @NombreGrupo
+			OR @NombreGrupo = ''
+			)
+		AND(
+			GU.Usuario = @Usuario
+			OR @Usuario = ''
+		)
+END
+
+
+
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoUsuarioEliminar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Usuario Eliminar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoUsuarioEliminar] (@IdGrupoUsuario INT)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	DELETE GrupoUsuario
+	WHERE IdGrupoUsuario = @IdGrupoUsuario
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoUsuarioLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Usuario Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoUsuarioLeer] (
+	@IdGrupoUsuario INT
+	,@IdGrupo INT
+	,@Usuario VARCHAR(200)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT GU.IdGrupoUsuario
+		,G.IdGrupo
+		,G.NombreGrupo
+		,U.IDUsuario
+		,U.NombreUsuario
+		,U.ApellidoUsuario
+		,LV.Valor AS EstadoGrupoUsuario
+		,LV.Descripcion AS EstadoGrupoUsuarioDesc
+		,GU.CreadoPor
+		,GU.FechaCreacion
+		,GU.ModificadoPor
+		,GU.FechaModificacion
+	FROM GrupoUsuario GU
+	INNER JOIN Grupo G ON GU.IdGrupo = G.IdGrupo
+	INNER JOIN Usuario U ON GU.Usuario = U.IDUsuario
+	INNER JOIN ListaValor LV ON GU.EstadoGrupoUsuario = LV.Valor
+	WHERE (
+			GU.IdGrupoUsuario = @IdGrupoUsuario
+			OR @IdGrupoUsuario = 0
+			)
+		AND (
+			G.IdGrupo = @IdGrupo
+			OR @IdGrupo = 0
+			)
+		AND (
+			U.IDUsuario = @Usuario
+			OR @Usuario = ''
+			)
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoUsuarioModificar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Usuario Modificar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoUsuarioModificar] (
+	@IdGrupoUsuario INT
+	,@IdGrupo INT
+	,@Usuario VARCHAR(200)
+	,@EstadoGrupoUsuario CHAR(6)
+	,@ModificadoPor VARCHAR(200)
+	,@FechaModificacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE GrupoUsuario
+	SET IdGrupo = @IdGrupo
+		,Usuario = @Usuario
+		,EstadoGrupoUsuario = @EstadoGrupoUsuario
+		,ModificadoPor = @ModificadoPor
+		,FechaModificacion = @FechaModificacion
+	WHERE IdGrupoUsuario = @IdGrupoUsuario
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GrupoUsuarioRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Grupo Usuario Registrar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_GrupoUsuarioRegistrar] (
+	@IdGrupo INT
+	,@Usuario VARCHAR(200)
+	,@EstadoGrupoUsuario CHAR(6)
+	,@CreadoPor VARCHAR(200)
+	,@FechaCreacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO GrupoUsuario(
+		IdGrupo
+		,Usuario
+		,EstadoGrupoUsuario
+		,CreadoPor
+		,FechaCreacion
+		)
+	VALUES (
+		@IdGrupo
+		,@Usuario
+		,@EstadoGrupoUsuario
+		,@CreadoPor
+		,@FechaCreacion
+		)
+	SELECT @@IDENTITY AS 'IdGrupoUsuario';
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaEliminar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Eliminar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaEliminar] (@IdLista INT)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	DELETE Lista
+	WHERE IdLista = @IdLista
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaLeer] (
+	@IdLista INT
+	,@NombreLista VARCHAR(200)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT IdLista
+		,NombreLista
+		,DescripcionLista
+		,CreadoPor
+		,FechaCreacion
+		,ModificadoPor
+		,FechaModificacion
+	FROM Lista
+	WHERE (
+			IdLista = @IdLista
+			OR @IdLista = 0
+			)
+		AND (
+			NombreLista = @NombreLista
+			OR @NombreLista = ''
+			)
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaModificar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Modificar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaModificar] (
+	@IdLista INT
+	,@NombreLista VARCHAR(200)
+	,@DescripcionLista VARCHAR(200)
+	,@ModificadoPor VARCHAR(200)
+	,@FechaModificacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE Lista
+	SET NombreLista = @NombreLista
+		,DescripcionLista = @DescripcionLista
+		,ModificadoPor = @ModificadoPor
+		,FechaModificacion = @FechaModificacion
+	WHERE IdLista = @IdLista
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Registrar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaRegistrar] (
+	@NombreLista VARCHAR(200)
+	,@DescripcionLista VARCHAR(200)
+	,@CreadoPor VARCHAR(200)
+	,@FechaCreacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO Lista(
+		NombreLista
+		,DescripcionLista
+		,CreadoPor
+		,FechaCreacion
+		)
+	VALUES (
+		@NombreLista
+		,@DescripcionLista
+		,@CreadoPor
+		,@FechaCreacion
+		)
+	SELECT @@IDENTITY AS 'IdLista';
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaValorEliminar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Valor Eliminar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaValorEliminar] (@IdListaValor INT)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	DELETE ListaValor
+	WHERE IdListaValor = @IdListaValor
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaValorLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Valor Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaValorLeer] (
+	@IdListaValor INT
+	,@IdLista INT
+	,@Valor VARCHAR(6)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT LV.IdListaValor
+		,L.IdLista
+		,L.NombreLista
+		,LV.Valor
+		,LV.Descripcion
+		,LV.CreadoPor
+		,LV.FechaCreacion
+		,LV.ModificadoPor
+		,LV.FechaModificacion
+	FROM ListaValor LV
+	INNER JOIN Lista L ON LV.IdLista = L.IdLista
+	WHERE (
+			LV.IdListaValor = @IdListaValor
+			OR @IdListaValor = 0
+			)
+		AND (
+			L.IdLista = @IdLista
+			OR @IdLista = 0
+			)
+		AND (
+			LV.Valor = @Valor
+			OR @Valor = ''
+			)
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaValorModificar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Valor Modificar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaValorModificar] (
+	@IdListaValor INT
+	,@IdLista INT
+	,@Valor CHAR(6)
+	,@Descripcion VARCHAR(200)
+	,@ModificadoPor VARCHAR(200)
+	,@FechaModificacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE ListaValor
+	SET IdLista = @IdLista
+		,Valor = @Valor
+		,Descripcion = @Descripcion
+		,ModificadoPor = @ModificadoPor
+		,FechaModificacion = @FechaModificacion
+	WHERE IdListaValor = @IdListaValor
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_ListaValorRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Lista Valor Registrar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_ListaValorRegistrar] (
+	@IdLista INT
+	,@Valor CHAR(6)
+	,@Descripcion VARCHAR(200)
+	,@CreadoPor VARCHAR(200)
+	,@FechaCreacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO ListaValor (
+		IdLista
+		,Valor
+		,Descripcion
+		,CreadoPor
+		,FechaCreacion
+		)
+	VALUES (
+		@IdLista
+		,@Valor
+		,@Descripcion
+		,@CreadoPor
+		,@FechaCreacion
+		)
+
+	SELECT @@IDENTITY AS 'IdListaValor';
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_RolEliminar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Rol Eliminar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_RolEliminar] (@IdRol INT)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	DELETE Rol
+	WHERE IdRol = @IdRol
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_RolLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Rol Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_RolLeer] (
+	@IdRol INT
+	,@NombreRol VARCHAR(200)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT R.IdRol
+		,R.NombreRol
+		,R.DescripcionRol
+		,LVE.Valor AS EstadoRol
+		,LVE.Descripcion AS EstadoRolDesc
+		,LVTP.Valor AS TipoPermiso
+		,LVTP.Descripcion AS TipoPermisoDesc
+		,R.CreadoPor
+		,R.FechaCreacion
+		,R.ModificadoPor
+		,R.FechaModificacion
+	FROM Rol R
+	INNER JOIN ListaValor LVE ON R.EstadoRol = LVE.Valor
+	INNER JOIN ListaValor LVTP ON R.TipoPermiso = LVTP.Valor
+	WHERE (
+			R.IdRol = @IdRol
+			OR @IdRol = 0
+			)
+		AND (
+			R.NombreRol = @NombreRol
+			OR @NombreRol = ''
+			)
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_RolModificar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Rol Modificar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_RolModificar] (
+	@IdRol INT
+	,@NombreRol VARCHAR(200)
+	,@DescripcionRol VARCHAR(200)
+	,@EstadoRol CHAR(6)
+	,@TipoPermiso CHAR(6)
+	,@ModificadoPor VARCHAR(200)
+	,@FechaModificacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE Rol
+	SET NombreRol = @NombreRol
+		,DescripcionRol = @DescripcionRol
+		,EstadoRol = @EstadoRol
+		,TipoPermiso = @TipoPermiso
+		,ModificadoPor = @ModificadoPor
+		,FechaModificacion = @FechaModificacion
+	WHERE IdRol = @IdRol
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_RolRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Rol Registrar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_RolRegistrar] (
+	@NombreRol VARCHAR(200)
+	,@DescripcionRol VARCHAR(200)
+	,@EstadoRol CHAR(6)
+	,@TipoPermiso CHAR(6)
+	,@CreadoPor VARCHAR(200)
+	,@FechaCreacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO Rol (
+		NombreRol
+		,DescripcionRol
+		,EstadoRol
+		,TipoPermiso
+		,CreadoPor
+		,FechaCreacion
+		)
+	VALUES (
+		@NombreRol
+		,@DescripcionRol
+		,@EstadoRol
+		,@TipoPermiso
+		,@CreadoPor
+		,@FechaCreacion
+		)
+
+	SELECT @@IDENTITY AS 'IdRol';
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_SesionActivar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Sesion Activar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_SesionActivar] (
+	@IdSesion INT
+	,@EstadoSesion CHAR(6)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE Sesion
+	SET EstadoSesion = @EstadoSesion
+	WHERE IdSesion = @IdSesion
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_SesionLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Sesion Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_SesionLeer] (
+	@IdSesion INT
+	,@Usuario VARCHAR(200)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT S.IdSesion
+		,S.IdAplicacion
+		,U.IDUsuario
+		,U.NombreUsuario
+		,U.ApellidoUsuario
+		,S.UltimoPermiso
+		,S.Token
+		,LV.Valor AS EstadoSesion
+		,LV.Descripcion AS EstadoSesionDesc
+	FROM Sesion S
+	INNER JOIN ListaValor LV ON S.EstadoSesion = LV.Valor
+	INNER JOIN Usuario U ON S.Usuario = U.IDUsuario
+	WHERE (
+			S.IdSesion = @IdSesion
+			OR @IdSesion = 0
+			)
+		AND (
+			U.IDUsuario = @Usuario
+			OR @Usuario = ''
+			)
+END
+GO
+/****** Object:  StoredProcedure [dbo].[SP_SesionRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Sesion Registrar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_SesionRegistrar] (
+	@IdAplicacion INT
+	,@Usuario VARCHAR(200)
+	,@UltimoPermiso VARCHAR(200)
+	,@Token VARCHAR(200)
+	,@EstadoSesion CHAR(6)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO Sesion (
+		IdAplicacion
+		,Usuario
+		,UltimoPermiso
+		,Token
+		,EstadoSesion
+		)
+	VALUES (
+		@IdAplicacion
+		,@Usuario
+		,@UltimoPermiso
+		,@Token
+		,@EstadoSesion
+		)
+
+	SELECT @@IDENTITY AS 'IdSesion';
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_Usuario_Iniciar_Sesion]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Usuario Iniciar Sesion
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_Usuario_Iniciar_Sesion] (
+	@Usuario VARCHAR(200)
+	,@Clave VARCHAR(200)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT U.IDUsuario
+		,U.NombreUsuario
+		,U.ApellidoUsuario
+		,LV.Valor AS EstadoUsuario
+		,LV.Descripcion AS EstadoUsuarioDesc
+		,U.CreadoPor
+		,U.FechaCreacion
+		,U.ModificadoPor
+		,U.FechaModificacion
+	FROM Usuario U
+	INNER JOIN ListaValor LV ON U.EstadoUsuario = LV.Valor
+	WHERE U.IDUsuario = @Usuario AND U.ClaveAcceso = @Clave
+END
+
+
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_UsuarioEliminar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Usuario Eliminar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_UsuarioEliminar] (@Usuario VARCHAR(200))
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	DELETE Usuario
+	WHERE IDUsuario = @Usuario
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_UsuarioLeer]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Usuario Leer
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_UsuarioLeer] (
+	@Usuario VARCHAR(200)
+	,@EstadoUsuario VARCHAR(6)
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	SELECT U.IDUsuario
+		,U.NombreUsuario
+		,U.ApellidoUsuario
+		,U.ClaveAcceso
+		,U.Email
+		,LV.Valor AS EstadoUsuario
+		,LV.Descripcion AS EstadoUsuarioDesc
+		,U.CreadoPor
+		,U.FechaCreacion
+		,U.ModificadoPor
+		,U.FechaModificacion
+	FROM Usuario U
+	INNER JOIN ListaValor LV ON U.EstadoUsuario = LV.Valor
+	WHERE (
+			U.IDUsuario = @Usuario
+			OR @Usuario = ''
+			)
+		AND (
+			U.EstadoUsuario = @EstadoUsuario
+			OR @EstadoUsuario = ''
+			)
+END
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_UsuarioModificar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Usuario Modificar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_UsuarioModificar] (
+	@Usuario VARCHAR(200)
+	,@NombreUsuario VARCHAR(200)
+	,@ApellidoUsuario VARCHAR(200)
+	,@ClaveAcceso VARCHAR(200)
+	,@Email VARCHAR(200)
+	,@EstadoUsuario VARCHAR(200)
+	,@ModificadoPor VARCHAR(200)
+	,@FechaModificacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	UPDATE Usuario
+	SET NombreUsuario = @NombreUsuario
+		,ApellidoUsuario = @ApellidoUsuario
+		,ClaveAcceso = @ClaveAcceso
+		,Email = @Email
+		,EstadoUsuario = @EstadoUsuario
+		,ModificadoPor = @ModificadoPor
+		,FechaModificacion = @FechaModificacion
+	WHERE IDUsuario = @Usuario
+END
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[SP_UsuarioRegistrar]    Script Date: 28/09/2019 02:45:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Daniel
+-- Create date: 20/09/2019
+-- Description:	Usuario Registrar 
+-- =============================================
+CREATE PROCEDURE [dbo].[SP_UsuarioRegistrar] (
+	@Usuario VARCHAR(200)
+	,@NombreUsuario VARCHAR(200)
+	,@ApellidoUsuario VARCHAR(200)
+	,@ClaveAcceso VARCHAR(200)
+	,@Email VARCHAR(200)
+	,@EstadoUsuario VARCHAR(200)
+	,@CreadoPor VARCHAR(200)
+	,@FechaCreacion DATETIME
+	)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	-- Insert statements for procedure here
+	INSERT INTO Usuario (
+		IDUsuario
+		,NombreUsuario
+		,ApellidoUsuario
+		,ClaveAcceso
+		,Email
+		,EstadoUsuario
+		,CreadoPor
+		,FechaCreacion
+		)
+	VALUES (
+		@Usuario
+		,@NombreUsuario
+		,@ApellidoUsuario
+		,@ClaveAcceso
+		,@Email
+		,@EstadoUsuario
+		,@CreadoPor
+		,@FechaCreacion
+		)
+
+	SELECT @Usuario AS 'IDUsuario';
+END
+
+
+
+GO

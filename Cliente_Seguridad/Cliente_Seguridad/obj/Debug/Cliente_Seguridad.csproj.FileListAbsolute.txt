@@ -1,0 +1,247 @@
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.dll.config
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.pdb
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.exe
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.exe.config
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.rsp
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.exe
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.exe.config
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.rsp
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.AppContext.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Console.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Compression.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Pipes.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Claims.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.ValueTuple.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XPath.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.exe
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.exe.config
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.rsp
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\VBCSCompiler.exe
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Antlr3.Runtime.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Newtonsoft.Json.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Helpers.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Mvc.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Optimization.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Razor.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Razor.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\WebGrease.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Helpers.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Mvc.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Optimization.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Razor.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Razor.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Newtonsoft.Json.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Antlr3.Runtime.pdb
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Helpers.resources.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Mvc.resources.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Optimization.resources.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Razor.resources.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.resources.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.csproj.CopyComplete
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.dll
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.pdb
+C:\Users\JCR\Desktop\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.csprojAssemblyReference.cache
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.dll.config
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.pdb
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.exe
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.exe.config
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.rsp
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.exe
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.exe.config
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.rsp
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.AppContext.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Console.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Compression.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Pipes.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Claims.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.ValueTuple.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XPath.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.exe
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.exe.config
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.rsp
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\VBCSCompiler.exe
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Antlr3.Runtime.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Newtonsoft.Json.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Helpers.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Mvc.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Optimization.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Razor.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Razor.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\WebGrease.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Helpers.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Mvc.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Optimization.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Razor.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Razor.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Newtonsoft.Json.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Antlr3.Runtime.pdb
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Helpers.resources.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Mvc.resources.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Optimization.resources.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Razor.resources.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.resources.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.csprojAssemblyReference.cache
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.csproj.CopyComplete
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.dll
+C:\Users\JOHAN\Desktop\Nueva carpeta (2)\Proyecto Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.dll.config
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Cliente_Seguridad.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.exe
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.exe.config
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csc.rsp
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.exe
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.exe.config
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\csi.rsp
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.AppContext.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Console.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Compression.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Claims.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.ValueTuple.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.exe
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.exe.config
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\vbc.rsp
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Antlr3.Runtime.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Newtonsoft.Json.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Helpers.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Mvc.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Optimization.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Razor.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Razor.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\WebGrease.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Helpers.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Mvc.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Optimization.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.Razor.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\System.Web.WebPages.Razor.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Newtonsoft.Json.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Antlr3.Runtime.pdb
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.Razor.resources.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.csproj.CopyComplete
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.dll
+C:\Users\Alumno\Desktop\Grupo_Seguridad\Cliente_Seguridad\Cliente_Seguridad\obj\Debug\Cliente_Seguridad.pdb

@@ -1,0 +1,43 @@
+﻿@model Cliente_Seguridad.ServicioSeguridad.Lista
+@{
+    ViewBag.Title = "ListaRegistrar";
+}
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        @using (Html.BeginForm("ListaRegistrar", "Lista", FormMethod.Post, new { @class = "form-horizontal" }))
+                        {
+                            <hr />
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Nombre de la Lista (*)</label>
+                                <div class="col-lg-10">
+                                    @Html.TextBoxFor(model => model.NombreLista, new { @class = "form-control", @placeholder = "Nombre con el que se conoce a la Lista" })
+                                    @Html.ValidationMessageFor(model => model.NombreLista, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Descripción de la Lista (*)</label>
+                                <div class="col-lg-10">
+                                    @Html.TextAreaFor(model => model.DescripcionLista, htmlAttributes: new { @class = "form-control", @placeholder = "Descripción del objetivo y uso de la Lista", @rows = "3", @maxlength = "500" })
+                                    @Html.ValidationMessageFor(model => model.DescripcionLista, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i>&nbsp;Grabar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

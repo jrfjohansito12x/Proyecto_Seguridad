@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Cliente_Seguridad.ServicioSeguridad.Grupo>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Lista de Roles</h5>
+            </div>
+            <div class="ibox-content">
+                <table class="table table-striped table-bordered table-hover dataTables-example">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            @if (ViewBag.PermisoEliminacion == "TPELIM")
+                            {
+                                <th>Eliminar</th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (Cliente_Seguridad.ServicioSeguridad.Grupo grupo in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @grupo.IdGrupo
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("GruposModificar","Grupos", new { idGrupo = grupo.IdGrupo })">@grupo.NombreGrupo</a>
+                                    </td>
+                                    <td>
+                                        @grupo.DescripcionGrupo
+                                    </td>
+                                    @if (ViewBag.PermisoEliminacion == "TPELIM")
+                                    {
+                                        <td>
+                                            <a class="demo3" id="@grupo.IdGrupo" href="#" onclick="eliminaObjeto('@Url.Action("GrupoEliminarJson", "Grupos", new {idGrupo = grupo.IdGrupo})');"><span class="fa fa-trash"></span></a>
+
+                                        </td>
+                                    }
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <div class="btn-group">
+                    @*<button type="button" class="btn btn-primary btn-sm " onclick="RolesExportar('@ViewBag.IdRol', '@ViewBag.NombreRol', '@ViewBag.IdAplicacion');"><i class="fa fa-file-excel-o"></i>&nbsp;Exportar a Excel</button>*@
+                    <button type="button" class="btn btn-primary btn-sm " onclick=""><i class="fa fa-file-excel-o"></i>&nbsp;Exportar a Excel</button>
+                </div>
+                @if (ViewBag.PermisoCreacion == "TPCREA")
+                {
+                    <div class="btn-group">
+                        <a href="@Url.Action("GruposCrear")" class="btn btn-default btn-sm" role="button"><i class="fa fa-file-o"></i>&nbsp;Nuevo</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

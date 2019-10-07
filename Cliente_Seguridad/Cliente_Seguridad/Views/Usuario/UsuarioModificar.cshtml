@@ -1,0 +1,105 @@
+﻿@model Cliente_Seguridad.ServicioSeguridad.Usuario
+@{
+    ViewBag.Title = "UsuarioModificar";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    @using (Html.BeginForm("UsuarioModificar", "Usuario", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Usuario (*)</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.IdUsuario, new { @class = "form-control", @placeholder = "Usuario" })
+                                @Html.ValidationMessageFor(model => model.IdUsuario, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Nombre (*)</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.NombreUsuario, new { @class = "form-control", @placeholder = "Usuario" })
+                                @Html.ValidationMessageFor(model => model.NombreUsuario, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Apellido (*)</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.ApellidoUsuario, new { @class = "form-control", @placeholder = "Usuario" })
+                                @Html.ValidationMessageFor(model => model.ApellidoUsuario, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Clave  (*)</label>
+                            <div class="col-lg-10">
+                                <input type="password" id="@Model.ClaveAcceso" class="form-control" value="@Model.ClaveAcceso">
+                                <input type="hidden" id="claveAcceso" , name="claveAcceso" value="@Model.ClaveAcceso">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Email (*)</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Usuario" })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Estado del Usuario (*)</label>
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(model => model.EstadoUsuario, new SelectList(ViewBag.ListaEstadoUsuario, "Value", "Text"), "- Seleccionar -", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.EstadoUsuario, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Creado El </label>
+                            <div class="col-lg-10">
+                                <input type="text" disabled class="form-control" value="@Model.FechaCreacion Por @Model.CreadoPor">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Modificado el</label>
+                            <div class="col-lg-10">
+                                @{var Modificado = "";
+                                    if (Model.FechaModificacion != null && Model.ModificadoPor != "")
+                                    {
+                                        Modificado = Model.FechaModificacion + " por " + Model.ModificadoPor;
+                                    }
+                                }
+                                <input type="text" class="form-control" disabled name="ModificadoElX" value="@Modificado">
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                @if (ViewBag.PermisoModificacion == "TPMODI")
+                                {
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i>&nbsp;Actualizar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoEliminacion == "TPELIM")
+                                {
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger btn-sm" onclick="eliminaObjeto('@Url.Action("UsuarioEliminarJson", "Usuario", new {usuario = Model.IdUsuario })');"><i class="fa fa-trash"></i>&nbsp;Eliminar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoCreacion == "TPCREA")
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("UsuarioRegistrar", "Usuario")" class="btn btn-default btn-sm" role="button"><i class="fa fa-file-o"></i>&nbsp;Nuevo</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                    <div>
+                        @Html.Action("Index", "GrupoUsuario", new { usuario = Model.IdUsuario })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,89 @@
+﻿@model Cliente_Seguridad.ServicioSeguridad.ListaValor
+@{
+    ViewBag.Title = "ListaValorModificar";
+}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    @using (Html.BeginForm("ListaValorModificar", "ListaValor", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Id Lista Valor</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.IdListaValor, new { @class = "form-control", @placeholder = "Valor de la Lista Valor", @readonly = "true" })
+                                @Html.ValidationMessageFor(model => model.IdListaValor, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Id Lista</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.IdLista, new { @class = "form-control", @placeholder = "Valor de la Lista Valor", @readonly = "true" })
+                                @Html.ValidationMessageFor(model => model.IdLista, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Nombre del Lista</label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.Valor, new { @class = "form-control", @placeholder = "Valor de la Lista Valor" })
+                                @Html.ValidationMessageFor(model => model.Valor, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Descripción del Lista</label>
+                            <div class="col-lg-10">
+                                @Html.TextAreaFor(model => model.Descripcion, htmlAttributes: new { @class = "form-control", @placeholder = "Descripción De La Lista Valor", @rows = "3", @maxlength = "500" })
+                                @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Creado el</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" disabled name="CreadoElX" value="@Model.FechaCreacion Por @Model.CreadoPor">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Modificado el</label>
+                            <div class="col-lg-10">
+                                @{var Modificado = "";
+                                    if (Model.FechaModificacion != null && Model.ModificadoPor != "")
+                                    {
+                                        Modificado = Model.FechaModificacion + " Por " + Model.ModificadoPor;
+                                    }
+                                }
+                                <input type="text" class="form-control" disabled name="ModificadoElX" value="@Modificado">
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                @if (ViewBag.PermisoModificacion == "TPMODI")
+                                {
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i>&nbsp;Grabar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoEliminacion == "TPELIM")
+                                {
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger btn-sm" onclick="eliminaObjeto('@Url.Action("ListaValorEliminarJson", "ListaValor", new {idListaValor = Model.IdListaValor })');"><i class="fa fa-trash"></i>&nbsp;Eliminar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoCreacion == "TPCREA")
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("ListaValorRegistrar", "ListaValor", new { idLista = Model.IdLista})" class="btn btn-default btn-sm" role="button"><i class="fa fa-file-o"></i>&nbsp;Nuevo</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

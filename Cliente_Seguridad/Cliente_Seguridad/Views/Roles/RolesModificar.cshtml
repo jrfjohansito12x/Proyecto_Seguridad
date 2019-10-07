@@ -1,0 +1,120 @@
+﻿@model Cliente_Seguridad.ServicioSeguridad.Rol
+@{
+    ViewBag.Title = "RolesModificar";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><small>Rol: </small>@Model.NombreRol</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    @using (Html.BeginForm("RolesModificar", "Roles", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+                        //rol.IdRol, rol.NombreRol, rol.DescripcionRol, rol.EstadoRol, rol.TipoPermiso, Session["Usuario"].ToString()
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">
+                                Id. Rol (*)
+                            </label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.IdRol, new { @class = "form-control", @readonly = "true" })
+                                @Html.ValidationMessageFor(model => model.IdRol, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">
+                                Nombre del Rol (*)
+                            </label>
+                            <div class="col-lg-10">
+                                @Html.TextBoxFor(model => model.NombreRol, new { @class = "form-control", @placeholder = "Nombre con el que se conoce al Rol" })
+                                @Html.ValidationMessageFor(model => model.NombreRol, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">
+                                Descripción del Rol
+                            </label>
+                            <div class="col-lg-10">
+                                @Html.TextAreaFor(model => model.DescripcionRol, htmlAttributes: new { @class = "form-control", @placeholder = "Descripción del objetivo y uso del Rol", @rows = "3", @maxlength = "2000" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">
+                                Estado del Rol
+                            </label>
+                            <div class="col-lg-10">
+                                @Html.DropDownListFor(model => model.EstadoRol, new SelectList(ViewBag.ListaEstadoRol, "Value", "Text"), "- Seleccionar -", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.EstadoRol, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">
+                                Tipo Permiso Rol
+                            </label>
+                            <div class="col-lg-10">
+                                @Html.DropDownListFor(model => model.TipoPermiso, new SelectList(ViewBag.TipoPermisos, "Value", "Text"), "- Seleccionar -", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.TipoPermiso, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">
+                                Creado el
+                            </label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" disabled name="CreadoElX" value="@Model.FechaCreacion por @Model.CreadoPor">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Modificado el</label>
+                            <div class="col-lg-10">
+                                @{var Modificado = "";
+                                    if (Model.FechaModificacion != null && Model.ModificadoPor != "")
+                                    {
+                                        Modificado = Model.FechaModificacion + " por " + Model.ModificadoPor;
+                                    }
+                                }
+                                <input type="text" class="form-control" disabled name="ModificadoElX" value="@Modificado">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                @if (ViewBag.PermisoModificacion == "TPMODI")
+                                {
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary btn-sm "><i class="fa fa-save"></i>&nbsp;Grabar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoEliminacion == "TPELIM")
+                                {
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger btn-sm" onclick="eliminaObjeto('@Url.Action("RolEliminarJson", "Roles", new {idRol = Model.IdRol })');"><i class="fa fa-trash"></i>&nbsp;Eliminar</button>
+                                    </div>
+                                }
+                                @if (ViewBag.PermisoCreacion == "TPCREA")
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("RolesCrear", "Roles")" class="btn btn-default btn-sm" role="button"><i class="fa fa-file-o"></i>&nbsp;Nuevo</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

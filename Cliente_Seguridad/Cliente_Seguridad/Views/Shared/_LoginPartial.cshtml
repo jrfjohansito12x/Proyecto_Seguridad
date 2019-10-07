@@ -1,0 +1,10 @@
+﻿<div class="navbar-right">
+    <ul class="nav navbar-top-links navbar-right">
+        <li>
+            @Session["Usuario"].ToString()
+        </li>
+        <li><a title="Salir" href=""><i class="fa fa-sign-out fa-2x text-danger"></i></a></li>
+        @Url.Action("Index", "Salir")
+
+    </ul>
+</div>
